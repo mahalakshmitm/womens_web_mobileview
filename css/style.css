@@ -1,0 +1,345 @@
+body
+{
+    background-color: white;
+    font-size: 10px;
+    font-family: "Montserrat","Open Sans", Calibri, sans-serif;
+    font-weight: light;
+    line-height: 2;
+}
+.skip{
+    position:absolute;
+    left: -1000px;
+}
+p{
+    line-height: 1;
+    margin: 0px 10px 0px 10px;
+}
+
+.skip:focus{
+    position:relative;
+    left:0;
+}
+.containers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    text-overflow: scroll;
+    padding: 10px;
+    margin: 0px 60px 0px 60px;
+}
+.disclaimer{
+    padding: 10px ;
+    font-size: 12px;
+    font-style: italic;
+    color: rgb(181, 65, 90);
+}
+h1
+{
+    font-family: "Montserrat","Open Sans", Calibri, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #1f1f1f;
+    padding: 10px;   
+    margin: 10px 10px 10px 5px;
+    animation: slide-in 2s ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateX(-100%);
+
+}
+    @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+dt{
+    font-family: "Montserrat","Open Sans", Calibri, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #1f1f1f;
+    padding: 10px;   
+    margin: 10px 10px 5px 5px;
+}
+/* dt p{
+    font-family: "Montserrat","Open Sans", Calibri, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f1f1f;
+    padding: 10px;   
+    margin: 10px 10px 5px 5px;
+} */
+
+h2
+{
+    font-family: "Montserrat","Open Sans", Calibri, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1f1f1f;
+    padding: 10px;   
+    margin: 10px 10px 5px 5px;
+}
+h3
+{
+    font-family: "Montserrat","Open Sans", Calibri, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #1f1f1f;
+}
+/*Style for images*/
+img
+{
+    width: 100%;
+}
+.title{
+    background-image: url("images/women_march_pano.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #1f1f1f;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200%;
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  }
+/* img:hover
+{
+    width: auto;
+    background-color: rgb(180, 223, 185);
+    border-radius: 50px;
+    padding: 10px;
+    margin: 10px;
+    border: dashed rgb(97, 243, 75);
+} */
+  
+.intro p {
+    color: #1f1f1f;
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 1.5;
+    padding: 20px;
+    margin: 0 20px;
+    width: 100%;
+  }
+  
+nav{
+    background-color: #1f1f1f;
+    padding: 0px 10px;
+    overflow: hidden;
+}
+nav ul {
+    display: block;
+  }
+
+  nav ul li {
+    display: block;
+    color: white;
+    background-color: #1f1f1f;
+    padding: 10px;
+  }
+
+  nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+
+nav ul li a:active{
+    background-color: white;
+    color: #1f1f1f;
+    text-decoration: underline;
+}
+
+nav ul li a:hover{
+    color: #1f1f1f;
+    /* padding: 20px; */
+    background-color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+nav ul li a.current{
+    background-color: white;
+    /* padding: 20px; */
+    color: #1f1f1f;
+    text-decoration: underline;
+}
+dt{
+    font-size: medium;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #1f1f1f;
+    padding: 10px;
+    
+}
+footer p{
+    color:white;
+    text-align: center;
+}
+footer a{
+    color:white;
+    align-content: left;
+}
+.containers {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+  
+.containers div {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(167, 166, 166, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    transition: transform 0.3s ease;
+    flex: 1;
+}
+.containers div:hover {
+    transform: translateY(-5px);
+}
+  
+.containers div h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+.containers div p {
+    font-size: 16px;
+    text-align: center;
+    justify-content: space-around;
+    text-overflow: scroll;
+    line-height: 2;
+    margin: 28px;
+}
+i{
+    color: #1f1f1f;
+    size: 20px;
+    padding-right:10px ;
+}
+@media screen and (prefers-reduced-motion: reduce){
+h1{
+    animation: none;
+    opacity: 1 !important;
+    transform: none !important;
+ }
+}
+
+/* -------------------------------------- */
+@media only screen and (min-width: 800px) {
+
+.containers {
+flex-wrap: nowrap;
+flex-direction: row;
+}
+.containers div {
+width: 33.33%;
+flex: 0 0 auto;
+text-overflow: scroll;
+}
+body
+{
+    background-color: white;
+    font-size: 125%;
+    font-family: "Montserrat","Open Sans", Calibri, sans-serif;
+    font-weight: light;
+}
+p{
+    line-height: 2;
+    margin: 0px 60px 0px 60px;
+}
+nav{
+    background-color: #1f1f1f;
+    padding: 0px 10px;
+    overflow: hidden;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li{
+    color: white;
+    padding: 20px ;
+    margin: inherit;
+    background-color: #1f1f1f;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav ul li a:active{
+    background-color: white;
+    color: #1f1f1f;
+    text-decoration: underline;
+}
+
+nav ul li a:hover{
+    color: #1f1f1f;
+    background-color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+nav ul li a.current{
+    background-color: white;
+    color: #1f1f1f;
+    text-decoration: underline;
+}
+
+h1
+{
+    font-family: "Montserrat","Open Sans", Calibri, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #1f1f1f;
+    padding: 10px;   
+    margin: 10px 60px 10px 20px;
+
+}
+h2
+{
+    font-family: "Montserrat","Open Sans", Calibri, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #1f1f1f;
+    padding: 10px;   
+    margin: 10px 60px 10px 60px;
+}
+h3
+{
+    font-family: "Montserrat","Open Sans", Calibri, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f1f1f;
+}
+.disclaimer{
+    padding: 20px ;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(181, 65, 90);
+    }
+@media screen and (prefers-reduced-motion: reduce){
+h1{
+    animation: none;
+    opacity: 1 !important;
+    transform: none !important;
+ }
+}
+}
+

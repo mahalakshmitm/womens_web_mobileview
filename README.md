@@ -1,2 +1,1 @@
-# womens_web_mobileview
-Mobile view check-point
+# 539_womens_web_project
