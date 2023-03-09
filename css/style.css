@@ -3,7 +3,7 @@ body
     background-color: white;
     font-size: 10px;
     font-family: "Montserrat","Open Sans", Calibri, sans-serif;
-    font-weight: light;
+    font-weight:lighter;
     line-height: 2;
 }
 .skip{
@@ -23,7 +23,7 @@ p{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
-    text-overflow: scroll;
+    overflow: scroll;
     padding: 10px;
     margin: 0px 60px 0px 60px;
 }
@@ -183,7 +183,6 @@ footer p{
 }
 footer a{
     color:white;
-    align-content: left;
 }
 .containers {
     display: flex;
@@ -218,13 +217,12 @@ footer a{
     font-size: 16px;
     text-align: center;
     justify-content: space-around;
-    text-overflow: scroll;
+    overflow: scroll;
     line-height: 2;
     margin: 28px;
 }
 i{
     color: #1f1f1f;
-    size: 20px;
     padding-right:10px ;
 }
 @media screen and (prefers-reduced-motion: reduce){
@@ -245,14 +243,14 @@ flex-direction: row;
 .containers div {
 width: 33.33%;
 flex: 0 0 auto;
-text-overflow: scroll;
+overflow: scroll;
 }
 body
 {
     background-color: white;
     font-size: 125%;
     font-family: "Montserrat","Open Sans", Calibri, sans-serif;
-    font-weight: light;
+    font-weight: lighter;
 }
 p{
     line-height: 2;
